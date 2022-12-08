@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de PF</title>
+</head>
+<body>
+    <form>
+        <!-- Campo nome -->
+        <h4>Informações Pessoais:</h4>
+        
+        <label for="inNome">Primeiro nome:</label>
+        <input type="text" id="inNome" size="20"> 
+        <br/>
+
+        <!-- Campo Sobrenome -->
+        <label for="inSobrenome">Sobrenome:</label>
+        <input type="text" id="inSobrenome" size="40"> 
+        <br/>
+
+        <!-- Radio -->
+        <h4>Estado Civil:</h4>
+
+        <input type="radio" id="inEC1" name="inEC" value="Solteiro"> 
+        <label for="inEC1">Solteiro</label>
+        <br/>
+
+        <input type="radio" id="inEC2" name="inEC" value="Casado"> 
+        <label for="inEC2">Casado</label>
+        <br/>
+
+        <input type="radio" id="inEC3" name="inEC" value="Divorciado"> 
+        <label for="inEC3">Solteiro</label>
+
+        <!-- Checkbox -->
+        <h4>Habilidades:</h4>
+
+        <input type="checkbox" id="inHab1" name="inHab1"> 
+        <label for="inHab1">HTML</label>
+        <br/>
+
+        <input type="checkbox" id="inHab2" name="inHab2"> 
+        <label for="inHab2">CSS</label>
+        <br/>
+
+        <input type="checkbox" id="inHab3" name="inHab3"> 
+        <label for="inHab3">JS</label>
+        <br/>
+
+        <label for="inCarro">Carro:</label>
+        <select name="inCarro" id="inCarro">
+            <option value="volvo">Volvo</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br/>
+
+        <label for="escolraidade">Escolaridade:</label>
+        <select name="escolaridade" id="escolaridade">
+            <option value="ensinoMedio" disabled>Ensino Médio</option>
+            <option value="superior">SUperior</option>
+            <option value="posGraduacao">Pós-Graduação</option>
+            <option value="mestrado" selected>Mestrado</option>
+            <option value="doutorado">Doutorado</option>
+        </select>
+        <br/>
+
+        <input type="submit" value="Cadastrar">
+    </form>    
+</body>
+</html>
